@@ -9,7 +9,7 @@
 1. Enhance the data array
 
 
-## Setup our app
+## Setup
 
 1. `cd ~/sei/express-fruits`
 2. Open `express-fruits` in your editor.
