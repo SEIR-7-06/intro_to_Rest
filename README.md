@@ -82,7 +82,7 @@ app.get('/fruits/:fruitIndex', (req, res) => {
 // index route
 // this route will catch GET requests to /fruits
 // and respond with all the fruits
-app.get('/fruits', (req, res) => {
+app.get('/fruits/', (req, res) => {
     res.send(fruits);
 });
 
@@ -145,7 +145,7 @@ app.get('/fruits/:fruitIndex', (req, res) => {
 // index route
 // this route will catch GET requests to /fruits
 // and respond with all the fruits
-app.get('/fruits', (req, res) => {
+app.get('/fruits/', (req, res) => {
     res.send(fruits);
 });
 
