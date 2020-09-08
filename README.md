@@ -40,6 +40,7 @@ We already have a show route, but now we know to label it as such.
 ```js
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
 // temporary, simulated database
 const fruits = ['apple', 'banana', 'pear'];
@@ -53,9 +54,9 @@ app.get('/fruits/:fruitIndex', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Listening for client requests');
-});
+app.listen(PORT, () => {
+    console.log(`Listening for client requests on port ${PORT}`);
+})
 ```
 
 Let's confirm that it's still working: http://localhost:3000/fruits/1
@@ -67,6 +68,7 @@ Let's create a route that will respond with all of the data (i.e., the `fruits` 
 ```js
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
 // temporary, simulated database
 const fruits = ['apple', 'banana', 'pear'];
@@ -87,9 +89,9 @@ app.get('/fruits/', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Listening for client requests');
-});
+app.listen(PORT, () => {
+    console.log(`Listening for client requests on port ${PORT}`);
+})
 ```
 
 Now go to http://localhost:3000/fruits/
@@ -114,6 +116,7 @@ Right now, `fruits` data is just an array of strings. Data from a database is mo
 ```js
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
 // temporary, simulated database
 const fruits = [
@@ -150,9 +153,9 @@ app.get('/fruits/', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Listening for client requests');
-});
+app.listen(PORT, () => {
+    console.log(`Listening for client requests on port ${PORT}`);
+})
 ```
 
 Let's take a look at our new data in the browser.
