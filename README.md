@@ -24,13 +24,13 @@ We have [7 RESTful routes](https://gist.github.com/alexpchin/09939db6f81d654af06
 
 | **URL** | **HTTP Verb** |  **Action** | **Description** |
 |------------|-------------|------------|------------|
-| /photos/         | GET       | index  | Retrieve many/all photos
-| /photos/new         | GET       | new   | Retrieve a form that can be used to create a new photo
-| /photos          | POST      | create   | Send data to create a new photo
-| /photos/:id      | GET       | show       | Retrieve one photo
-| /photos/:id/edit | GET       | edit       | Retrieve a photo and a prepopulated form that can be used to edit that photo
-| /photos/:id      | PATCH/PUT | update    | Send data to update an existing photo
-| /photos/:id      | DELETE    | destroy  | Remove a photo
+| /fruits/         | GET       | index  | Retrieve many/all fruits
+| /fruits/new         | GET       | new   | Retrieve a form that can be used to create a new fruit
+| /fruits          | POST      | create   | Send data to create a new fruit
+| /fruits/:id      | GET       | show       | Retrieve one fruit
+| /fruits/:id/edit | GET       | edit       | Retrieve a fruit and a prepopulated form that can be used to edit that fruit
+| /fruits/:id      | PATCH/PUT | update    | Send data to update an existing fruit
+| /fruits/:id      | DELETE    | destroy  | Remove a fruit
 
 
 ## Create a Show route
